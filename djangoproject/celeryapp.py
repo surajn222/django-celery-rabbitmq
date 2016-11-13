@@ -2,7 +2,7 @@ from __future__ import absolute_import, unicode_literals
 from celery import Celery
 
 app = Celery('djangoproject',
-             broker='amqp://admin:password@vagrant-ubuntu-trusty-64/vhost',
+             broker='amqp://admin:password@192.168.0.3/vhost',
              backend='amqp://',
              include=['djangoproject.tasks'])
 
